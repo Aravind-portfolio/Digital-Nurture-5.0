@@ -1,0 +1,166 @@
+-- CUSTOMERS
+
+INSERT INTO Customers VALUES
+(1,'John Doe',
+TO_DATE('1985-05-15','YYYY-MM-DD'),
+8000,
+SYSDATE,
+'N');
+
+INSERT INTO Customers VALUES
+(2,'Jane Smith',
+TO_DATE('1992-07-20','YYYY-MM-DD'),
+15000,
+SYSDATE,
+'N');
+
+INSERT INTO Customers VALUES
+(3,'Robert',
+TO_DATE('1950-04-11','YYYY-MM-DD'),
+25000,
+SYSDATE,
+'N');
+
+INSERT INTO Customers VALUES
+(4,'Emily',
+TO_DATE('1958-01-18','YYYY-MM-DD'),
+9000,
+SYSDATE,
+'N');
+
+INSERT INTO Customers VALUES
+(5,'David',
+TO_DATE('1962-03-28','YYYY-MM-DD'),
+12000,
+SYSDATE,
+'N');
+
+-- ACCOUNTS
+
+INSERT INTO Accounts VALUES
+(101,1,'Savings',8000,SYSDATE);
+
+INSERT INTO Accounts VALUES
+(102,2,'Savings',15000,SYSDATE);
+
+INSERT INTO Accounts VALUES
+(103,3,'Savings',25000,SYSDATE);
+
+INSERT INTO Accounts VALUES
+(104,4,'Checking',9000,SYSDATE);
+
+INSERT INTO Accounts VALUES
+(105,5,'Savings',12000,SYSDATE);
+
+-- LOANS
+
+INSERT INTO Loans VALUES
+(
+1,
+1,
+50000,
+8,
+SYSDATE,
+SYSDATE+20
+);
+
+INSERT INTO Loans VALUES
+(
+2,
+2,
+80000,
+9,
+SYSDATE,
+SYSDATE+45
+);
+
+INSERT INTO Loans VALUES
+(
+3,
+3,
+100000,
+10,
+SYSDATE,
+SYSDATE+10
+);
+
+INSERT INTO Loans VALUES
+(
+4,
+4,
+60000,
+7,
+SYSDATE,
+SYSDATE+15
+);
+
+INSERT INTO Loans VALUES
+(
+5,
+5,
+40000,
+9,
+SYSDATE,
+SYSDATE+5
+);
+
+-- EMPLOYEES
+
+INSERT INTO Employees VALUES
+(
+1,
+'Alice',
+'Manager',
+70000,
+'HR',
+TO_DATE('2015-06-15','YYYY-MM-DD')
+);
+
+INSERT INTO Employees VALUES
+(
+2,
+'Bob',
+'Developer',
+60000,
+'IT',
+TO_DATE('2017-03-20','YYYY-MM-DD')
+);
+
+INSERT INTO Employees VALUES
+(
+3,
+'Kevin',
+'Developer',
+65000,
+'IT',
+TO_DATE('2019-05-14','YYYY-MM-DD')
+);
+
+INSERT INTO Employees VALUES
+(
+4,
+'Sarah',
+'Analyst',
+55000,
+'Finance',
+TO_DATE('2018-07-18','YYYY-MM-DD')
+);
+
+-- TRANSACTIONS
+
+INSERT INTO Transactions VALUES
+(1,101,SYSDATE,500,'Deposit');
+
+INSERT INTO Transactions VALUES
+(2,102,SYSDATE,800,'Withdrawal');
+
+INSERT INTO Transactions VALUES
+(3,103,SYSDATE,600,'Deposit');
+
+INSERT INTO Transactions VALUES
+(4,104,SYSDATE,1000,'Withdrawal');
+
+INSERT INTO Transactions VALUES
+(5,105,SYSDATE,300,'Deposit');
+
+COMMIT;
