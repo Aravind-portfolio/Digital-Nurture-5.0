@@ -59,8 +59,6 @@ Binary Search is more suitable for large e-commerce platforms because it searche
 
 ## Output
 
-(Insert screenshot here or add output.png)
-
 Linear Search:
 103 Watch Accessories
 
